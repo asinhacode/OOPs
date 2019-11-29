@@ -9,23 +9,16 @@ public class Chapter5 {
 
 	private static int minimum = Integer.MAX_VALUE;
 	
+	
 	public static void main(String[] args) {
 		
-		Scanner a = new Scanner(System.in);
 		
 		System.out.println("Enter a number:\t");
 		
-		int test = Integer.parseInt(a.next());
+		int test = Integer.parseInt(scan().next());
 		
-		while(test != -1000)
-		{
-			findSmallest(test);
-			System.out.println("Enter a number:\t");
-			
-			test = Integer.parseInt(a.next());
-		}
+		findSmallest(test);
 		
-		System.out.println("Minimum:\t" + minimum);
 	}
 	
 	/**
@@ -40,14 +33,30 @@ public class Chapter5 {
 	 * once loop terminates print the minimum
 	 * @return
 	 */
-	public static int findSmallest(int test) {
-		
-		if(minimum > test)
+	
+	public static void findSmallest(int test) {
+
+		while(test != -1000)
 		{
-			minimum = test;
+			if(minimum > test)
+			{
+				minimum = test;
+			}			
+			System.out.println("Enter a number:\t");
+			
+			test = Integer.parseInt(scan().next());
 		}
 		
-		return minimum;
+		System.out.println("Minimum:\t" + minimum);
+		
+		
 	}
+	
+	public static Scanner scan() {
+		Scanner a = new Scanner(System.in);
+		return a;
+	}
+	
+	
 
 }
