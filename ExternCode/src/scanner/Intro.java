@@ -17,6 +17,7 @@ public class Intro {
 		
 		
 		isAdminDeterminator(response, user);
+		a.close();
 		
 	}
 	
