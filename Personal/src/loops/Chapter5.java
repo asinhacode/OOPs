@@ -13,11 +13,17 @@ public class Chapter5 {
 	public static void main(String[] args) {
 		
 		
-		System.out.println("Enter a number:\t");
+		/*
+		 * System.out.println("Enter a number:\t");
+		 * 
+		 * int test = Integer.parseInt(scan().next());
+		 * 
+		 * findSmallest(test);
+		 */
 		
-		int test = Integer.parseInt(scan().next());
+		//oddProduct();
 		
-		findSmallest(test);
+		System.out.println(factorial(20));
 		
 	}
 	
@@ -50,6 +56,57 @@ public class Chapter5 {
 		System.out.println("Minimum:\t" + minimum);
 		
 		
+	}
+	
+	/**
+	 * Product of numbers between 1 and 15
+	 * @return
+	 */
+	
+	public static void oddProduct() {
+		
+		int product = 1;
+		
+		for(int i = 2; i < 16; i++)
+		{
+			if(i % 2 != 0)
+			{
+				System.out.println(i);
+				product *= i;
+
+				System.out.println("Product: " + product);
+			}
+			
+		}
+		
+	}
+	
+	public static long factorial(long number) {
+		
+		
+		if(number == 0) {
+			return 1;
+		}
+		
+		else {
+			return number * factorial(number - 1);
+		}
+	}
+	
+	/**
+	 * Calculate compound interest for 5, 6, 7, 8, 9%
+	 * 
+	 * @return
+	 */
+	
+	public static void compound(double principle) {
+		
+		for(int i = 5; i < 11; i++)
+		{
+			double finalAmount = principle * Math.pow((1 + (i / 100)), (i - 4));
+			
+			System.out.println(finalAmount);
+		}
 	}
 	
 	public static Scanner scan() {
