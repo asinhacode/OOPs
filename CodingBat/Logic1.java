@@ -111,3 +111,30 @@ public boolean less20(int n) {
   return (n % 20 == 18) || (n % 20 == 19);
 }
 
+
+public boolean nearTen(int num) {
+  int nearTen = num % 10;
+  
+  return nearTen == 2 || nearTen == 1 || nearTen == 0 || nearTen == 8 || nearTen == 9;
+    //return nearTen < 3 ||  nearTen == 8 || nearTen == 9;
+
+}
+
+public int teenSum(int a, int b) {
+  
+  if ( (a > 12 && a < 20) || (b > 12 && b < 20) ) return 19;
+
+  return a + b;
+}
+
+public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep) {
+  
+  if(isAsleep)
+  return false;
+  
+  if(isMorning)
+  return isMom;
+  
+  return true;
+}
+
