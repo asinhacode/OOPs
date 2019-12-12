@@ -138,3 +138,49 @@ public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep) {
   return true;
 }
 
+
+public boolean lastDigit(int a, int b, int c) {
+  // get last digit
+  int A = a % 10;
+  int B = b % 10;
+  int C = c % 10;
+  
+  return A == B || A == C || B == C;
+}
+
+public boolean lessBy10(int a, int b, int c) {
+  
+  int A = Math.abs(a - b);
+  int B = Math.abs(b - c);
+  int C = Math.abs(a - c);
+  
+  return (A > 9 || B > 9 || C > 9);
+}
+
+public int withoutDoubles(int die1, int die2, boolean noDoubles) 
+{
+  if(noDoubles)
+  {
+    if(die1 == die2) // same value
+    {
+      ++die1;
+      
+      if(die1 == 7) // wrap aound to 1 when over 6
+      die1 = 1;
+    }
+  }
+      return die1 + die2;
+  }
+
+public int maxMod5(int a, int b) 
+{
+  if(a == b)
+  return 0;
+  
+  else if(a % 5 == b % 5)
+  return Math.min(a,b);
+  
+  else
+  return Math.max(a,b);
+
+}
