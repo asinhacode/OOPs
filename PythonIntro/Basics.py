@@ -81,3 +81,8 @@ age = int(age)
 print("Double your age: " )
 print(2 * age)
 print("You are: " + str(age))
+
+# float
+age = float(age) + 0.3
+print("Double your age: " )
+print(2 * age)
