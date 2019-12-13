@@ -86,3 +86,84 @@ print("You are: " + str(age))
 age = float(age) + 0.3
 print("Double your age: " )
 print(2 * age)
+
+# madlib
+adjective = input("Enter an adjective: ")
+noun = input("Enter a noun: ")
+noun2 = input("Enter a noun2: ")
+
+print(noun + " is a " + adjective + " " + noun2)
+
+# importing library
+from math import *
+
+# arrays, lists
+friends = ["Apple", "NoOne", "Myself"]
+mixture = ["I am ", 98, " years old."]
+print(mixture)
+print(mixture[0] + str(mixture[1]) + mixture[2])
+
+# print partial numbers
+prime = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]
+print(prime[4:])
+
+# print using negative indexes
+print(prime[-6:])
+print(prime[-1]) # last element
+
+# range
+print(prime[4:9])
+
+# out of range
+# print(prime[43])
+
+# extending an array with another array
+even = [2, 4, 6, 8]
+odd = [1, 3, 5, 7, 9]
+
+print(even)
+print(odd)
+
+# increase the list
+odd.extend(even)
+print(odd)
+
+# extending by copying itself
+odd.extend(odd)
+print(odd)
+
+print(even)
+
+# append : add right at the end of the list
+even.append(10)
+print(even)
+
+# insert at a particular index
+# first number, the index where the value goes in
+even.insert(0, 0)
+print(even)
+
+even.insert(-1, 12)
+print(even)
+
+# remove the second last element
+even.remove(12) # have to specify the value not the index number of the list
+print(even)
+
+# remove the last element.
+# instead of specifying the value, use the index
+even.pop()
+print(even)
+
+# remove the first index
+even.pop(0)
+print(even)
+
+# find the index of the value provided
+print(even.index(6))
+
+
+
+
+
+
