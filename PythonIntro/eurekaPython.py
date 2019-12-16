@@ -41,3 +41,38 @@ print(complexity.get(5))
 complexity[6] = '.'
 print(complexity)
 
+# conversion type
+even = 2
+com = " complement"
+print(str(even) + com)
+
+# convert string to int
+fifteen = "15"
+print(int(fifteen) + 3)
+
+# COLLECTIONS
+# LISTS, TUPLES, SETS, DICTIONARY
+
+# declare a library
+from collections import namedtuple
+
+# first part: describes a class
+# second part shows multiple attributes
+a = namedtuple('course', 'idea_number, language, idea')
+
+# each attribute gets the values
+idea00 = a('00', 'python', 'data structures')
+print(idea00)
+
+# NOTICE: person is displayed
+b = namedtuple('person', 'name, age')
+
+# object creation
+marcus = b("Anu", 35)
+biel = b("Sin", 53)
+
+print(marcus)
+print(biel)
+
+
+
