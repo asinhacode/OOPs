@@ -77,3 +77,132 @@ public int[] middleWay(int[] a, int[] b) {
   
   return middle;
 }
+
+// 11
+public int[] makeEnds(int[] nums) 
+{
+  int[] two = new int[2];
+  
+    if(nums.length < 2)
+    {
+       two[0] = nums[0];
+       two[1] = nums[0];
+    }
+    
+    else
+    {
+      two[0] = nums[0];
+      two[1] = nums[nums.length - 1];
+    }
+    
+      return two;
+}
+
+// 12
+public boolean has23(int[] nums) {
+  
+  int first = nums[0];
+  int second = nums[1];
+  
+    return (first == 2 || first == 3 || second == 2 || second == 3);
+}
+
+// 13
+public boolean no23(int[] nums) {
+    int first = nums[0];
+  int second = nums[1];
+  
+  return !(first == 2 || first == 3 || second == 2 || second == 3);
+}
+
+// 14
+public int[] makeLast(int[] nums) {
+  
+  int[] twice = new int[nums.length * 2];
+  twice[twice.length - 1] = nums[nums.length - 1];
+  
+    return twice;
+}
+
+// 15
+public boolean double23(int[] nums) {
+  
+  if(nums.length < 2)
+    return false;
+    
+  else
+    return ( nums[0] == 2 && nums[1] == 2 ) || ( nums[0] == 3 && nums[1] == 3 );
+  
+}
+
+// 16
+public int[] fix23(int[] nums) {
+  
+  if(nums[0] == 2)
+  {
+    if(nums[1] == 3)
+      nums[1] = 0;
+  }
+  
+  if(nums[1] == 2)
+  {
+    if(nums[2] == 3)
+      nums[2] = 0;
+  }
+  
+  return nums;
+  
+}
+
+// 17
+
+public int start1(int[] a, int[] b) {
+  int one = 0;
+  
+  if(a.length > 0)
+  {
+    if(a[0] == 1)
+      one++;
+  }
+  
+  if(b.length > 0)
+  {
+    if(b[0] == 1)
+      one++;
+  }
+  
+  return one;
+  
+  
+}
+
+// 18
+
+public int[] biggerTwo(int[] a, int[] b) {
+  
+  int sumA = a[0] + a[1];
+  int sumB = b[0] + b[1];
+  
+    if(sumB > sumA)
+    {
+      return b;
+    }
+    
+    else
+      return a;
+  
+}
+
+// 19
+public int[] makeMiddle(int[] nums) {
+  
+  int[] two = new int[2];
+  
+    two[0] = nums[nums.length / 2 - 1];
+    two[1] = nums[nums.length / 2];
+  
+      return two;
+}
+
+
+
