@@ -204,5 +204,74 @@ public int[] makeMiddle(int[] nums) {
       return two;
 }
 
+// 20
+public int[] plusTwo(int[] a, int[] b) { // add all elements from 2 arrays
+  int[] ab = {a[0], a[1], b[0], b[1]};
+  
+  return ab;
+}
+
+// 21
+public int[] swapEnds(int[] nums) { // switch first and last
+  int temp = nums[0];
+  nums[0] = nums[nums.length - 1];
+  nums[nums.length - 1] = temp;
+  
+  return nums;
+}
+
+// 22
+public int[] midThree(int[] nums) {
+  int[] odd = new int[3];
+  
+  odd[0] = nums[nums.length / 2 - 1]; // middle left
+  odd[1] = nums[nums.length / 2 ]; // middle
+  odd[2] = nums[nums.length / 2 + 1]; // middle right
+
+    return odd;
+  
+}
+
+// 23
+public int maxTriple(int[] nums) {
+  int largest = nums[0]; // first
+  
+  if(largest < nums[nums.length / 2]) // middle
+    largest = nums[nums.length / 2];
+  
+   if (largest < nums[nums.length - 1]) // last
+    largest = nums[nums.length - 1];
+    
+    return largest;
+}
+
+
+// 24
+public int[] frontPiece(int[] nums) {
+  
+  int[] two;
+  
+    if(nums.length == 0) // 0 length
+    {
+      two = new int[0];
+      return two;
+    }
+  
+    else if(nums.length == 1) // 1 length
+    {
+      two = new int[1];
+      two[0] = nums[0];
+    }
+    
+    else // 2 or more
+    {
+      two = new int[2];
+      two[0] = nums[0];
+      two[1] = nums[1];
+    }
+    
+      return two;
+  
+}
 
 
