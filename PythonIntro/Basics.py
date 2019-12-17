@@ -163,7 +163,62 @@ print(even)
 print(even.index(6))
 
 
+num1 = input("Enter first number: ") # STRINGS
+num2 = input("Enter second number: ")
 
+# Convert String into an Int
+
+addition = int(num1) + int(num2);
+subtraction = int(num1) - int(num2);
+multiply = int(num1) * int(num2);
+division = int(num1) / int(num2);
+
+print(addition)
+print(subtraction)
+print(multiply)
+print(division)
+
+odd = [1, 3 , 5, 7, 9, 11, 13, 15, 17, 19]
+even = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+print(odd)
+print("Sixth Element: " + str(odd[5]))
+
+# extend the array by adding another array
+odd.extend(even)
+print(odd)
+
+even.extend(odd)
+print(even)
+
+# extend can be used with different value types
+wierd = ["Anu", "Pam"]
+even.extend(wierd)
+print(even)
+
+# insertion
+even.insert(13, "sixty")
+print(even)
+
+even.extend(odd)
+even.extend(odd)
+
+# count a number of times 8 is present in list even
+print(even.count(8))
+
+print(even)
+
+# reverse a list
+even.reverse()
+print(even);
+
+# copy a list
+even_copy = even.copy()
+even_copy.reverse()
+print(even_copy)
+
+# get part of the array
+print(even_copy[65:])
 
 
 
