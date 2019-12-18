@@ -274,4 +274,101 @@ public int[] frontPiece(int[] nums) {
   
 }
 
+// 25
+public boolean unlucky1(int[] nums) 
+{
+  if(nums.length < 2)
+  return false;
+  
+  
+    if(nums[0] == 1)
+    {
+      if(nums[1] == 3)
+        return true;
+    }
+    
+    if(nums[1] == 1)
+    {
+      if(nums[2] == 3)
+        return true;
+    }
+    
+    if(nums[nums.length - 2] == 1)
+    {
+      if(nums[nums.length - 1] == 3)
+        return true;
+    }
+  
+  
+  else
+  return false;
+}
+
+// better 25
+public boolean unlucky1(int[] nums) 
+{
+  return((nums.length > 1) && ((nums[0] == 1 && nums[1] == 3) || (nums[1] == 1 && nums[2] == 3) || (nums[nums.length - 2] == 1 && nums[nums.length - 1] == 3)));
+  
+}
+
+// 26
+public int[] make2(int[] a, int[] b) {
+  
+  int[] combined = new int[2];
+  
+    if(a.length > 0)
+    {
+      // firsdt element
+      combined[0] = a[0];
+       
+      // second element
+        if(a.length > 1)
+        {
+          combined[1] = a[1];
+          return combined;
+        }
+      // get second from first of b
+        if(b.length > 0)
+       {
+          combined[1] = b[0];
+          return combined;
+       }    
+    }
+    
+  // a is empty and given than minimum is 2, we get b
+    combined[0] = b[0];
+    combined[1] = b[1];
+    return combined;
+    
+}
+
+// 27 - tried
+public int[] front11(int[] a, int[] b)
+{
+	int[] front;
+	if(a.length >= 1)
+	{
+		if(b.length >= 1)
+		{
+			front = new int[2];
+			front[0] = a[0];
+			front[1] = b[0];
+		}
+		else
+		{
+			front = new int[1];
+			front[0] = a[0];
+		}
+	}
+	else if(b.length >= 1)
+	{
+		front = new int[1];
+		front[0] = b[0];
+	} 
+	else
+		front = new int[0];
+	return front; 
+}
+
+
 
