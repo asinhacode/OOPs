@@ -220,5 +220,20 @@ print(even_copy)
 # get part of the array
 print(even_copy[65:])
 
+# tuples: can't add or change it
+# they are immutable
+coordinates = (0, -1)
+print(coordinates)
 
+# accessing individual coordinate
+print(coordinates[0] + 2 + coordinates[1])
+
+# add values
+co1 = [(0, 1), (10, 11), (3,3), (5,1)]
+
+# accessing different parts of tuple
+print(co1[1][1])
+
+co2 = [(0, 100,3), (10, 11,12), (3,3,6), (5,1,-1)]
+print(co2[0][1])
 
