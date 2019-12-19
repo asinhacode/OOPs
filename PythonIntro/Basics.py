@@ -248,3 +248,104 @@ def cigar_party(cigars, is_weekend):
   else:
     return False
 
+  # FUNCTIONS
+# declare with :
+def say_hi():
+  print("Hello User!")
+  print("How are you today?")
+
+# add arguments
+def say_hi_modified(name):
+    print("Hello " + name)
+    print("How are you today?")
+
+# return something
+def cube(num):
+    return num * num * num
+
+
+
+# call the function
+say_hi()
+say_hi_modified("Sinner")
+
+# return values
+cubedValue = cube(80)
+print(cubedValue)
+
+# conditional logic
+TRUE1 = False
+FALSE1 = True
+
+if TRUE1:
+    print("MALE")
+
+else:
+    print("FEMALE")
+
+def findMax(n1, n2, n3):
+    temp = n1
+    if temp < n2:
+        temp = n2
+
+    if temp < n3:
+        temp = n3
+
+    return temp
+
+print(findMax(136, 15, 70))
+
+# version 1
+def calculator(n1, op, n2):
+    if op == "+":
+        return int(n1) + int(n2)
+
+    elif op == "-":
+        return int(n1) - int(n2)
+
+    elif op == "*":
+        return int(n1) * int(n2)
+
+    elif op == "%":
+        return int(n1) % int(n2)
+    else:
+        return int(n1) / int(n2)
+
+
+
+
+n1 = input("Enter number:\t")
+op = input("Enter operator:\t")
+n2 = input("Enter number:\t")
+
+print(calculator(n1,op,n2))
+
+# version 2
+def calculator(n1, op, n2):
+    if op == "+":
+        return n1 + n2
+
+    elif op == "-":
+        return n1 - n2
+
+    elif op == "*":
+        return n1 * n2
+
+    elif op == "%":
+        return n1 % n2
+    else:
+        return n1 / n2
+
+
+
+# add float to reduce conversion on each
+n1 = float(input("Enter number:\t"))
+op = input("Enter operator:\t")
+n2 = float(input("Enter number:\t"))
+
+print(calculator(n1,op,n2))
+
+
+
+
+
