@@ -345,7 +345,53 @@ n2 = float(input("Enter number:\t"))
 
 print(calculator(n1,op,n2))
 
+# DICTIONARY
+monthConversion ={
+    "M": "MONDAY", "T": "TUESDAY", "W": "WEDNESDAY", "J": "THURSDAY", "F": "FRIDAY", "S": "SATURDAY", "D": "SUNDAY"
+}
 
+print(monthConversion["D"])
+print(monthConversion["J"])
+print(monthConversion["S"])
+print(monthConversion["F"])
+
+print(monthConversion.get("T"))
+
+# introduction to loops
+i = 0
+while i < 10:
+    print("Hello World: " + str(i))
+    i += 1
+    
+# GUESS GAME
+secret = 7
+guess = " "
+
+while guess != secret:
+    guess = int(input("Enter your choice:\t"))
+
+print("CORRECT!")
+
+# GUESS GAME, version 2
+
+secret = 7
+guess = " "
+guess_count = 0
+
+# version 2 with guess count
+while guess != secret:
+    guess = int(input("Enter your choice:\t"))
+    if guess < secret:
+        print("LOW")
+
+    else:
+        print("HIGH")
+
+    guess_count += 1
+
+
+print("CORRECT!")
+print(guess_count)
 
 
 
