@@ -237,3 +237,14 @@ print(co1[1][1])
 co2 = [(0, 100,3), (10, 11,12), (3,3,6), (5,1,-1)]
 print(co2[0][1])
 
+# functions and conditional logic
+def cigar_party(cigars, is_weekend):
+  if is_weekend and cigars > 39:
+    return True
+    
+  elif (cigars > 39 and cigars < 61):
+    return True
+    
+  else:
+    return False
+
