@@ -394,4 +394,50 @@ print("CORRECT!")
 print(guess_count)
 
 
+# for loop for each letter
+for letter in "Academy":
+    print(letter)
 
+for letter in "Academy":
+    print(letter + "a")
+
+# array print
+find = ["Jim", "Karen", 1, 3]
+for f in find:
+    print(f)
+
+# 0 1 2 3
+for index in range(4):
+    print(index)
+
+# number of elements in find
+for index in range(len(find)):
+    print(index)
+
+# coonditions in loops
+for i in range(10):
+    if i % 2 == 0:
+        print(i)
+
+# power function
+print(2** 4)
+
+two = 1
+for i in range(1,5):
+    two *= 2
+
+print(two)
+
+# exponent function
+def pow(base, exp):
+
+    result = 1
+    
+    # goes till exp inclusive
+    for i in range(exp):
+        result *= base
+
+    return result
+
+
+print(pow(3,2))
