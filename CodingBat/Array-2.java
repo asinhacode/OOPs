@@ -157,3 +157,46 @@ public boolean more14(int[] nums) {
 
 // 10
 
+public int[] fizzArray(int n) {
+  
+  // create an array with length n
+  int[] neW = new int[n];
+  
+    for(int i = 0; i < n; i++)
+    {
+      neW[i] = i;
+    }
+  
+      return neW;
+  
+}
+
+// 11
+public boolean only14(int[] nums) {
+  
+  boolean oneFour = true;
+  
+    for(int i : nums)
+    {
+      if(!(i == 1 || i == 4))
+      return false;
+    }
+    
+      return oneFour;
+}
+
+// 12
+public String[] fizzArray2(int n) {
+  
+  String[] fizz = new String[n];
+  
+    for(int i = 0; i < n; i++)
+    {
+      fizz[i] = String.valueOf(i);
+    }
+    
+      return fizz;
+  
+}
+
+// 13
