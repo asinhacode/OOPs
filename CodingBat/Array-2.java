@@ -200,3 +200,19 @@ public String[] fizzArray2(int n) {
 }
 
 // 13
+public boolean no14(int[] nums) 
+{
+  boolean one = true, four = true;
+  
+  for(int i : nums)
+  {
+    if(i == 1)
+    one = false;
+    
+    else if( i == 4)
+    four = false;
+    
+  }
+  
+  return one || four;
+}
