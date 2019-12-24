@@ -441,3 +441,14 @@ def pow(base, exp):
 
 
 print(pow(3,2))
+
+# exception
+def intro():
+    try:
+        number = int(input("Enter a number:"))
+        print(number)
+    except ValueError as ii: # prints the actual error
+        print(ii)
+
+
+intro()
