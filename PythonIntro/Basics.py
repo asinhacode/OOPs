@@ -452,3 +452,18 @@ def intro():
 
 
 intro()
+
+ # r - read, w - overrite, a - append at the end
+                        person = open("Info.txt", "a")
+                        print(person.writable())
+
+                        person.write("\nDate of Birth: 0/0/0")
+                        person.write("\nStatus: ALIVE")
+                        person.write("\nBored!")
+
+                        # create an html file
+                        info = open("index.html", "a") # append at the end
+                        info.write("<h1> Writing via PYTHON</h1>") # add proper tags
+
+
+                        person.close()
