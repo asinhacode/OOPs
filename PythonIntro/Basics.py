@@ -467,3 +467,28 @@ intro()
 
 
                         person.close()
+
+  # EXTERNAL FILE : INHERITANCE
+  import random
+
+feet = 5280
+meters = 1000
+beatles = ["John Lenon", "Paul McCartney", "George harrison", "Ringo Star"]
+
+def get_file_ext(filename):
+    return filename[filename.index(".") + 1:]
+
+# find a number between 1 and num exclusive
+def roll_dice(num):
+    return random.randint(1,num)
+  
+  # INTERNAL FILE
+  
+  # import file name
+import Useful # THE FILE ABOVE
+
+for i in range(6):
+    print(Useful.roll_dice(6))
+
+print(Useful.beatles)
+print(Useful.meters)
