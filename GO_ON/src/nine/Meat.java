@@ -3,7 +3,7 @@ package nine;
 public class Meat extends food{
 
 	// overwritten
-	void eat()
+	public void eat()
 	{
 		System.out.println("Some of us eat meat. ");
 	}

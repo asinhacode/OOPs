@@ -8,8 +8,8 @@ public class Alive {
 		fish.why();
 		printLn();
 
-		food f = new food();
-		f.eat();
+		//food f = new food();
+		//f.eat();
 		printLn();
 
 		Vegetables v = new Vegetables();
@@ -24,7 +24,7 @@ public class Alive {
 
 		// example
 		food a[] = new food[3];
-		a[0] = new food();
+		//a[0] = new food();
 		a[1] = new Meat();
 		a[2] = new Vegetables();
 
@@ -38,12 +38,12 @@ public class Alive {
 		printLn();
 
 		Eater miu = new Eater();
-		food material = new food(); // Eater takes food argument
+		//food material = new food(); // Eater takes food argument
 
-		miu.digest(material);
+		//miu.digest();
 		miu.digest(a[1]); // can take its subclasses as well.
 		miu.digest(a[2]);
-		miu.digest(f);
+		//miu.digest(f);
 
 	}
 
